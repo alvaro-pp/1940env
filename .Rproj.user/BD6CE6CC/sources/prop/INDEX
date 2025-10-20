@@ -1,2 +1,5 @@
 ~%2Fa02_research%2F1940env%2F.gitignore="B403D94E"
 ~%2Fa02_research%2F1940env%2FREADME.md="4330BF93"
+~%2Fa02_research%2F1940env%2Fscripts%2Fa00_countyshapefiles.R="E3FF62C9"
+~%2Fa02_research%2F1940env%2Fscripts%2Fa01_download_PRISM.R="CDC7A92C"
+~%2Fa02_research%2F1940env%2Fscripts%2Fa01_download_weather.R="5FF3FD58"

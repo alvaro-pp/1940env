@@ -1,2 +1,5 @@
 /Users/alvaro/a02_research/1940env/.gitignore="C9FD9C2D"
 /Users/alvaro/a02_research/1940env/README.md="5B5E6570"
+/Users/alvaro/a02_research/1940env/scripts/a00_countyshapefiles.R="73289AE2"
+/Users/alvaro/a02_research/1940env/scripts/a01_download_PRISM.R="E029995A"
+/Users/alvaro/a02_research/1940env/scripts/a01_download_weather.R="8BC6C1EB"
