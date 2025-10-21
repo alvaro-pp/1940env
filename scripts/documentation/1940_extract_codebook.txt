@@ -1,4 +1,4 @@
-Description: 1940 Env
+Description: Revision of (Revision of 00016)
 Samples selected:
       1940 100% database
             Note: 
@@ -12,23 +12,40 @@ Case Selection:               No
   SAMPLE                       H   5-10           6     X       
   SERIAL                       H  11-18           8     X       
   HHWT                         H  19-28          10     X       
-  COUNTYICP                    H  29-32           4     X       
-  GQ                           H  33              1     X       
-  PERNUM                       P  34-37           4     X       
-  PERWT                        P  38-47          10     X       
-  MARST                        P  48              1     X       
-  BIRTHYR                      P  49-52           4     X       
-  RACE                         P  53              1     X       
-  RACED                        P  54-56           3     X       
-  BPL                          P  57-59           3     X       
-  BPLD                         P  60-64           5     X       
-  CITIZEN                      P  65              1     X       
-  SCHOOL                       P  66              1     X       
-  OCC1950                      P  67-69           3     X       
-  INCWAGE                      P  70-75           6     X       
-  OCCSCORE                     P  76-77           2     X       
-  VERSIONHIST                  P  78-79           2     X       
-  HISTID                       P  80-115         36     X       
+  STATEFIP                     H  29-30           2     X       
+  COUNTYICP                    H  31-34           4     X       
+  GQ                           H  35              1     X       
+  OWNERSHP                     H  36              1     X       
+  OWNERSHPD                    H  37-38           2     X       
+  PERNUM                       P  39-42           4     X       
+  PERWT                        P  43-52          10     X       
+  MARST                        P  53              1     X       
+  BIRTHYR                      P  54-57           4     X       
+  RACE                         P  58              1     X       
+  RACED                        P  59-61           3     X       
+  BPL                          P  62-64           3     X       
+  BPLD                         P  65-69           5     X       
+  CITIZEN                      P  70              1     X       
+  SCHOOL                       P  71              1     X       
+  EDUC                         P  72-73           2     X       
+  EDUCD                        P  74-76           3     X       
+  EMPSTAT                      P  77              1     X       
+  EMPSTATD                     P  78-79           2     X       
+  LABFORCE                     P  80              1     X       
+  CLASSWKR                     P  81              1     X       
+  CLASSWKRD                    P  82-83           2     X       
+  OCC                          P  84-87           4     X       
+  OCC1950                      P  88-90           3     X       
+  IND                          P  91-94           4     X       
+  WKSWORK1                     P  95-96           2     X       
+  HRSWORK1                     P  97-98           2     X       
+  INCWAGE                      P  99-104          6     X       
+  OCCSCORE                     P 105-106          2     X       
+  MIGRATE5                     P 107              1     X       
+  MIGRATE5D                    P 108-109          2     X       
+  MIGCOUNTYICP5                P 110-113          4     X       
+  VERSIONHIST                  P 114-115          2     X       
+  HISTID                       P 116-151         36     X       
 
 Variable Availability Key:
 All Years X - available in this sample
@@ -229,6 +246,71 @@ SAMPLE              IPUMS sample identifier
 186001              1860 1%
 185002              1850 100% database
 185001              1850 1%
+
+STATEFIP            State (FIPS code)
+01                  Alabama
+02                  Alaska
+04                  Arizona
+05                  Arkansas
+06                  California
+08                  Colorado
+09                  Connecticut
+10                  Delaware
+11                  District of Columbia
+12                  Florida
+13                  Georgia
+15                  Hawaii
+16                  Idaho
+17                  Illinois
+18                  Indiana
+19                  Iowa
+20                  Kansas
+21                  Kentucky
+22                  Louisiana
+23                  Maine
+24                  Maryland
+25                  Massachusetts
+26                  Michigan
+27                  Minnesota
+28                  Mississippi
+29                  Missouri
+30                  Montana
+31                  Nebraska
+32                  Nevada
+33                  New Hampshire
+34                  New Jersey
+35                  New Mexico
+36                  New York
+37                  North Carolina
+38                  North Dakota
+39                  Ohio
+40                  Oklahoma
+41                  Oregon
+42                  Pennsylvania
+44                  Rhode Island
+45                  South Carolina
+46                  South Dakota
+47                  Tennessee
+48                  Texas
+49                  Utah
+50                  Vermont
+51                  Virginia
+53                  Washington
+54                  West Virginia
+55                  Wisconsin
+56                  Wyoming
+                    State groups (1980 Urban/rural sample):
+61                  Maine-New Hampshire-Vermont
+62                  Massachusetts-Rhode Island
+63                  Minnesota-Iowa-Missouri-Kansas-Nebraska-S.Dakota-N.Dakota
+64                  Maryland-Delaware
+65                  Montana-Idaho-Wyoming
+66                  Utah-Nevada
+67                  Arizona-New Mexico
+68                  Alaska-Hawaii
+72                  Puerto Rico
+97                  Military/Mil. Reservation
+99                  State not identified
 
 COUNTYICP           County (ICPSR code, identifiable counties only)
 0010                
@@ -535,6 +617,21 @@ GQ                  Group quarters status
 4                   Other group quarters
 5                   Additional households under 2000 definition
 6                   Fragment
+
+OWNERSHP            Ownership of dwelling (tenure) [general version]
+0                   N/A
+1                   Owned or being bought (loan)
+2                   Rented
+
+OWNERSHPD           Ownership of dwelling (tenure) [detailed version]
+00                  N/A
+10                  Owned or being bought
+11                  Check mark (owns?)
+12                  Owned free and clear
+13                  Owned with mortgage or loan
+20                  Rented
+21                  No cash rent
+22                  With cash rent
 
 MARST               Marital status
 1                   Married, spouse present
@@ -1620,6 +1717,1128 @@ SCHOOL              School attendance
 8                   Unknown
 9                   Missing
 
+EDUC                Educational attainment [general version]
+00                  N/A or no schooling
+01                  Nursery school to grade 4
+02                  Grade 5, 6, 7, or 8
+03                  Grade 9
+04                  Grade 10
+05                  Grade 11
+06                  Grade 12
+07                  1 year of college
+08                  2 years of college
+09                  3 years of college
+10                  4 years of college
+11                  5+ years of college
+99                  Missing
+
+EDUCD               Educational attainment [detailed version]
+000                 N/A or no schooling
+001                 N/A
+002                 No schooling completed
+010                 Nursery school to grade 4
+011                 Nursery school, preschool
+012                 Kindergarten
+013                 Grade 1, 2, 3, or 4
+014                 Grade 1
+015                 Grade 2
+016                 Grade 3
+017                 Grade 4
+020                 Grade 5, 6, 7, or 8
+021                 Grade 5 or 6
+022                 Grade 5
+023                 Grade 6
+024                 Grade 7 or 8
+025                 Grade 7
+026                 Grade 8
+030                 Grade 9
+040                 Grade 10
+050                 Grade 11
+060                 Grade 12
+061                 12th grade, no diploma
+062                 High school graduate or GED
+063                 Regular high school diploma
+064                 GED or alternative credential
+065                 Some college, but less than 1 year
+070                 1 year of college
+071                 1 or more years of college credit, no degree
+080                 2 years of college
+081                 Associate's degree, type not specified
+082                 Associate's degree, occupational program
+083                 Associate's degree, academic program
+090                 3 years of college
+100                 4 years of college
+101                 Bachelor's degree
+110                 5+ years of college
+111                 6 years of college (6+ in 1960-1970)
+112                 7 years of college
+113                 8+ years of college
+114                 Master's degree
+115                 Professional degree beyond a bachelor's degree
+116                 Doctoral degree
+999                 Missing
+
+EMPSTAT             Employment status [general version]
+0                   N/A
+1                   Employed
+2                   Unemployed
+3                   Not in labor force
+9                   Unknown/Illegible
+
+EMPSTATD            Employment status [detailed version]
+00                  N/A
+                    In Labor Force
+                    Employed
+10                  At work
+11                  At work, public emerg
+12                  Has job, not working
+13                  Armed forces
+14                  Armed forces--at work
+15                  Armed forces--not at work but with job
+20                  Unemployed
+21                  Unemp, exper worker
+22                  Unemp, new worker
+30                  Not in Labor Force
+31                  NILF, housework
+32                  NILF, unable to work
+33                  NILF, school
+34                  NILF, other
+99                  Unknown/Illegible
+
+LABFORCE            Labor force status
+0                   N/A
+1                   No, not in the labor force
+2                   Yes, in the labor force
+9                   Unclassifiable (employment status unknown)
+
+CLASSWKR            Class of worker [general version]
+0                   N/A
+1                   Self-employed
+2                   Works for wages
+9                   Unknown
+
+CLASSWKRD           Class of worker [detailed version]
+00                  N/A
+10                  Self-employed
+11                  Employer
+12                  Working on own account
+13                  Self-employed, not incorporated
+14                  Self-employed, incorporated
+20                  Works for wages
+21                  Works on salary (1920)
+22                  Wage/salary, private
+23                  Wage/salary at non-profit
+24                  Wage/salary, government
+25                  Federal govt employee
+26                  Armed forces
+27                  State govt employee
+28                  Local govt employee
+29                  Unpaid family worker
+98                  Illegible
+99                  Unknown
+
+OCC                 Occupation
+0000                
+0001                
+0002                
+0003                
+0004                
+0005                
+0006                
+0007                
+0008                
+0009                
+0010                
+0011                
+0012                
+0013                
+0014                
+0015                
+0016                
+0017                
+0018                
+0019                
+0020                
+0021                
+0022                
+0023                
+0024                
+0025                
+0026                
+0027                
+0028                
+0029                
+0030                
+0031                
+0032                
+0033                
+0034                
+0035                
+0036                
+0037                
+0038                
+0039                
+0040                
+0041                
+0042                
+0043                
+0044                
+0045                
+0046                
+0047                
+0048                
+0049                
+0050                
+0051                
+0052                
+0053                
+0054                
+0055                
+0056                
+0057                
+0058                
+0059                
+0060                
+0061                
+0062                
+0063                
+0064                
+0065                
+0066                
+0067                
+0068                
+0069                
+0070                
+0071                
+0072                
+0073                
+0074                
+0075                
+0076                
+0077                
+0078                
+0079                
+0080                
+0081                
+0082                
+0083                
+0084                
+0085                
+0086                
+0087                
+0088                
+0089                
+0090                
+0091                
+0092                
+0093                
+0094                
+0095                
+0096                
+0097                
+0098                
+0099                
+0100                
+0101                
+0102                
+0103                
+0104                
+0105                
+0106                
+0107                
+0108                
+0109                
+0110                
+0111                
+0112                
+0113                
+0114                
+0115                
+0116                
+0117                
+0118                
+0119                
+0120                
+0121                
+0122                
+0123                
+0124                
+0125                
+0126                
+0127                
+0128                
+0129                
+0130                
+0131                
+0132                
+0133                
+0134                
+0135                
+0136                
+0137                
+0138                
+0139                
+0140                
+0141                
+0142                
+0143                
+0144                
+0145                
+0146                
+0147                
+0148                
+0149                
+0150                
+0151                
+0152                
+0153                
+0154                
+0155                
+0156                
+0157                
+0158                
+0159                
+0160                
+0161                
+0162                
+0163                
+0164                
+0165                
+0166                
+0167                
+0168                
+0169                
+0170                
+0171                
+0172                
+0173                
+0174                
+0175                
+0176                
+0177                
+0178                
+0179                
+0180                
+0181                
+0182                
+0183                
+0184                
+0185                
+0186                
+0187                
+0188                
+0189                
+0190                
+0191                
+0192                
+0193                
+0194                
+0195                
+0196                
+0197                
+0198                
+0199                
+0200                
+0201                
+0202                
+0203                
+0204                
+0205                
+0206                
+0207                
+0208                
+0209                
+0210                
+0211                
+0212                
+0213                
+0214                
+0215                
+0216                
+0217                
+0218                
+0219                
+0220                
+0221                
+0222                
+0223                
+0224                
+0225                
+0226                
+0227                
+0228                
+0229                
+0230                
+0231                
+0232                
+0233                
+0234                
+0235                
+0236                
+0237                
+0238                
+0239                
+0240                
+0241                
+0242                
+0243                
+0244                
+0245                
+0246                
+0247                
+0248                
+0249                
+0250                
+0251                
+0252                
+0253                
+0254                
+0255                
+0256                
+0257                
+0258                
+0259                
+0260                
+0261                
+0262                
+0263                
+0264                
+0265                
+0266                
+0267                
+0268                
+0269                
+0270                
+0271                
+0272                
+0273                
+0274                
+0275                
+0276                
+0277                
+0278                
+0279                
+0280                
+0281                
+0282                
+0283                
+0284                
+0285                
+0286                
+0287                
+0288                
+0289                
+0290                
+0291                
+0292                
+0293                
+0294                
+0295                
+0296                
+0297                
+0298                
+0299                
+0300                
+0301                
+0302                
+0303                
+0304                
+0305                
+0306                
+0307                
+0308                
+0309                
+0310                
+0311                
+0312                
+0313                
+0314                
+0315                
+0316                
+0317                
+0318                
+0319                
+0320                
+0321                
+0322                
+0323                
+0324                
+0325                
+0326                
+0327                
+0328                
+0329                
+0330                
+0331                
+0332                
+0333                
+0334                
+0335                
+0336                
+0337                
+0338                
+0339                
+0340                
+0341                
+0342                
+0343                
+0344                
+0345                
+0346                
+0347                
+0348                
+0349                
+0350                
+0351                
+0352                
+0353                
+0354                
+0355                
+0356                
+0357                
+0358                
+0359                
+0360                
+0361                
+0362                
+0363                
+0364                
+0365                
+0366                
+0367                
+0368                
+0369                
+0370                
+0371                
+0372                
+0373                
+0374                
+0375                
+0376                
+0377                
+0378                
+0379                
+0380                
+0381                
+0382                
+0383                
+0384                
+0385                
+0386                
+0387                
+0388                
+0389                
+0390                
+0391                
+0392                
+0393                
+0394                
+0395                
+0396                
+0397                
+0398                
+0399                
+0400                
+0401                
+0402                
+0403                
+0404                
+0405                
+0406                
+0407                
+0408                
+0409                
+0410                
+0411                
+0412                
+0413                
+0414                
+0415                
+0416                
+0417                
+0418                
+0419                
+0420                
+0421                
+0422                
+0423                
+0424                
+0425                
+0426                
+0427                
+0428                
+0429                
+0430                
+0431                
+0432                
+0433                
+0434                
+0435                
+0436                
+0437                
+0438                
+0439                
+0440                
+0441                
+0442                
+0443                
+0444                
+0445                
+0446                
+0447                
+0448                
+0449                
+0450                
+0451                
+0452                
+0453                
+0454                
+0455                
+0456                
+0457                
+0458                
+0459                
+0460                
+0461                
+0462                
+0463                
+0464                
+0465                
+0466                
+0467                
+0468                
+0469                
+0470                
+0471                
+0472                
+0473                
+0474                
+0475                
+0476                
+0477                
+0478                
+0479                
+0480                
+0481                
+0482                
+0483                
+0484                
+0485                
+0486                
+0487                
+0488                
+0489                
+0490                
+0491                
+0492                
+0493                
+0494                
+0495                
+0496                
+0497                
+0498                
+0499                
+0500                
+0501                
+0502                
+0503                
+0504                
+0505                
+0506                
+0507                
+0508                
+0509                
+0510                
+0511                
+0512                
+0513                
+0514                
+0515                
+0516                
+0517                
+0518                
+0519                
+0520                
+0521                
+0522                
+0523                
+0524                
+0525                
+0526                
+0527                
+0528                
+0529                
+0530                
+0531                
+0532                
+0533                
+0534                
+0535                
+0536                
+0537                
+0538                
+0539                
+0540                
+0541                
+0542                
+0543                
+0544                
+0545                
+0546                
+0547                
+0548                
+0549                
+0550                
+0551                
+0552                
+0553                
+0554                
+0555                
+0556                
+0557                
+0558                
+0559                
+0560                
+0561                
+0562                
+0563                
+0564                
+0565                
+0566                
+0567                
+0568                
+0569                
+0570                
+0571                
+0572                
+0573                
+0574                
+0575                
+0576                
+0577                
+0578                
+0579                
+0580                
+0581                
+0582                
+0583                
+0584                
+0585                
+0586                
+0587                
+0588                
+0589                
+0590                
+0591                
+0592                
+0593                
+0594                
+0595                
+0596                
+0597                
+0598                
+0599                
+0600                
+0601                
+0602                
+0603                
+0604                
+0605                
+0606                
+0607                
+0608                
+0609                
+0610                
+0611                
+0612                
+0613                
+0614                
+0615                
+0616                
+0617                
+0618                
+0619                
+0620                
+0621                
+0622                
+0623                
+0624                
+0625                
+0626                
+0627                
+0628                
+0629                
+0630                
+0631                
+0632                
+0633                
+0634                
+0635                
+0636                
+0637                
+0638                
+0639                
+0640                
+0641                
+0642                
+0643                
+0644                
+0645                
+0646                
+0647                
+0648                
+0649                
+0650                
+0651                
+0652                
+0653                
+0654                
+0655                
+0656                
+0657                
+0658                
+0659                
+0660                
+0661                
+0662                
+0663                
+0664                
+0665                
+0666                
+0667                
+0668                
+0669                
+0670                
+0671                
+0672                
+0673                
+0674                
+0675                
+0676                
+0677                
+0678                
+0679                
+0680                
+0681                
+0682                
+0683                
+0684                
+0685                
+0686                
+0687                
+0688                
+0689                
+0690                
+0691                
+0692                
+0693                
+0694                
+0695                
+0696                
+0697                
+0698                
+0699                
+0700                
+0701                
+0702                
+0703                
+0704                
+0705                
+0706                
+0707                
+0708                
+0709                
+0710                
+0711                
+0712                
+0713                
+0714                
+0715                
+0716                
+0717                
+0718                
+0719                
+0720                
+0721                
+0722                
+0723                
+0724                
+0725                
+0726                
+0727                
+0728                
+0729                
+0730                
+0731                
+0732                
+0733                
+0734                
+0735                
+0736                
+0737                
+0738                
+0739                
+0740                
+0741                
+0742                
+0743                
+0744                
+0745                
+0746                
+0747                
+0748                
+0749                
+0750                
+0751                
+0752                
+0753                
+0754                
+0755                
+0756                
+0757                
+0758                
+0759                
+0760                
+0761                
+0762                
+0763                
+0764                
+0765                
+0766                
+0767                
+0768                
+0769                
+0770                
+0771                
+0772                
+0773                
+0774                
+0775                
+0776                
+0777                
+0778                
+0779                
+0780                
+0781                
+0782                
+0783                
+0784                
+0785                
+0786                
+0787                
+0788                
+0789                
+0790                
+0791                
+0792                
+0793                
+0794                
+0795                
+0796                
+0797                
+0798                
+0799                
+0800                
+0801                
+0802                
+0803                
+0804                
+0805                
+0806                
+0807                
+0808                
+0809                
+0810                
+0811                
+0812                
+0813                
+0814                
+0815                
+0816                
+0817                
+0818                
+0819                
+0820                
+0821                
+0822                
+0823                
+0824                
+0825                
+0826                
+0827                
+0828                
+0829                
+0830                
+0831                
+0832                
+0833                
+0834                
+0835                
+0836                
+0837                
+0838                
+0839                
+0840                
+0841                
+0842                
+0843                
+0844                
+0845                
+0846                
+0847                
+0848                
+0849                
+0850                
+0851                
+0852                
+0853                
+0854                
+0855                
+0856                
+0857                
+0858                
+0859                
+0860                
+0861                
+0862                
+0863                
+0864                
+0865                
+0866                
+0867                
+0868                
+0869                
+0870                
+0871                
+0872                
+0873                
+0874                
+0875                
+0876                
+0877                
+0878                
+0879                
+0880                
+0881                
+0882                
+0883                
+0884                
+0885                
+0886                
+0887                
+0888                
+0889                
+0890                
+0891                
+0892                
+0893                
+0894                
+0895                
+0896                
+0897                
+0898                
+0899                
+0900                
+0901                
+0902                
+0903                
+0904                
+0905                
+0906                
+0907                
+0908                
+0909                
+0910                
+0911                
+0912                
+0913                
+0914                
+0915                
+0916                
+0917                
+0918                
+0919                
+0920                
+0921                
+0922                
+0923                
+0924                
+0925                
+0926                
+0927                
+0928                
+0929                
+0930                
+0931                
+0932                
+0933                
+0934                
+0935                
+0936                
+0937                
+0938                
+0939                
+0940                
+0941                
+0942                
+0943                
+0944                
+0945                
+0946                
+0947                
+0948                
+0949                
+0950                
+0951                
+0952                
+0953                
+0954                
+0955                
+0956                
+0957                
+0958                
+0959                
+0960                
+0961                
+0962                
+0963                
+0964                
+0965                
+0966                
+0967                
+0968                
+0969                
+0970                
+0971                
+0972                
+0973                
+0974                
+0975                
+0976                
+0977                
+0978                
+0979                
+0980                
+0981                
+0982                
+0983                
+0984                
+0985                
+0986                
+0987                
+0988                
+0989                
+0990                
+0991                
+0992                
+0993                
+0994                
+0995                
+0996                
+0997                
+0998                
+0999                
+
 OCC1950             Occupation, 1950 basis
                     Professional, Technical:
 000                 Accountants and auditors
@@ -1918,6 +3137,373 @@ OCC1950             Occupation, 1950 basis
 997                 Occupation missing/unknown
 999                 N/A (blank)
 
+IND                 Industry
+0000                
+0001                
+0002                
+0003                
+0004                
+0005                
+0006                
+0007                
+0008                
+0009                
+0010                
+0011                
+0012                
+0013                
+0014                
+0015                
+0016                
+0017                
+0018                
+0019                
+0020                
+0021                
+0022                
+0023                
+0024                
+0025                
+0026                
+0027                
+0028                
+0029                
+0030                
+0031                
+0032                
+0033                
+0034                
+0035                
+0036                
+0037                
+0038                
+0039                
+0040                
+0041                
+0042                
+0043                
+0044                
+0045                
+0046                
+0047                
+0048                
+0049                
+0050                
+0051                
+0052                
+0053                
+0054                
+0055                
+0056                
+0057                
+0058                
+0059                
+0060                
+0061                
+0062                
+0063                
+0064                
+0065                
+0066                
+0067                
+0068                
+0069                
+0070                
+0071                
+0072                
+0073                
+0074                
+0075                
+0076                
+0077                
+0078                
+0079                
+0080                
+0081                
+0082                
+0083                
+0084                
+0085                
+0086                
+0087                
+0088                
+0089                
+0090                
+0091                
+0092                
+0093                
+0094                
+0095                
+0096                
+0097                
+0098                
+0099                
+0100                
+0101                
+0102                
+0103                
+0104                
+0105                
+0106                
+0107                
+0108                
+0109                
+0110                
+0111                
+0112                
+0113                
+0114                
+0115                
+0116                
+0117                
+0118                
+0119                
+0120                
+0121                
+0122                
+0123                
+0124                
+0125                
+0126                
+0127                
+0128                
+0129                
+0130                
+0131                
+0137                
+0138                
+0139                
+0146                
+0147                
+0148                
+0149                
+0157                
+0158                
+0159                
+0166                
+0167                
+0168                
+0169                
+0176                
+0177                
+0178                
+0179                
+0186                
+0187                
+0188                
+0197                
+0198                
+0199                
+0206                
+0207                
+0208                
+0209                
+0219                
+0227                
+0228                
+0229                
+0236                
+0237                
+0238                
+0239                
+0246                
+0247                
+0248                
+0249                
+0257                
+0258                
+0259                
+0267                
+0268                
+0269                
+0278                
+0279                
+0287                
+0288                
+0289                
+0293                
+0297                
+0298                
+0299                
+0307                
+0308                
+0309                
+0317                
+0318                
+0319                
+0327                
+0328                
+0329                
+0337                
+0338                
+0339                
+0346                
+0347                
+0348                
+0349                
+0357                
+0358                
+0359                
+0367                
+0368                
+0369                
+0377                
+0378                
+0379                
+0387                
+0388                
+0389                
+0397                
+0398                
+0399                
+0407                
+0408                
+0409                
+0417                
+0418                
+0419                
+0427                
+0428                
+0429                
+0447                
+0448                
+0449                
+0467                
+0468                
+0469                
+0477                
+0478                
+0479                
+0499                
+0507                
+0508                
+0509                
+0527                
+0528                
+0529                
+0536                
+0537                
+0538                
+0539                
+0557                
+0558                
+0559                
+0566                
+0567                
+0568                
+0569                
+0587                
+0588                
+0599                
+0607                
+0608                
+0609                
+0617                
+0618                
+0619                
+0626                
+0627                
+0628                
+0629                
+0636                
+0637                
+0638                
+0639                
+0646                
+0647                
+0648                
+0649                
+0657                
+0658                
+0667                
+0668                
+0669                
+0676                
+0677                
+0678                
+0679                
+0687                
+0688                
+0689                
+0696                
+0697                
+0698                
+0699                
+0706                
+0707                
+0708                
+0709                
+0717                
+0718                
+0719                
+0727                
+0728                
+0729                
+0736                
+0737                
+0738                
+0739                
+0747                
+0748                
+0749                
+0756                
+0757                
+0758                
+0759                
+0766                
+0767                
+0769                
+0776                
+0777                
+0778                
+0779                
+0786                
+0787                
+0788                
+0789                
+0797                
+0798                
+0799                
+0807                
+0808                
+0809                
+0817                
+0826                
+0828                
+0829                
+0837                
+0838                
+0839                
+0847                
+0848                
+0849                
+0856                
+0857                
+0858                
+0859                
+0867                
+0868                
+0869                
+0876                
+0877                
+0878                
+0879                
+0887                
+0888                
+0889                
+0897                
+0899                
+0907                
+0917                
+0927                
+0937                
+0947                
+0995                
+0996                
+0997                
+0998                
+0999                
+
 OCCSCORE            Occupational income score
 00                  
 03                  
@@ -1977,6 +3563,33 @@ OCCSCORE            Occupational income score
 63                  
 79                  
 80                  
+
+MIGRATE5            Migration status, 5 years [general version]
+0                   N/A
+1                   Same house
+2                   Moved within state
+3                   Moved between states
+4                   Abroad five years ago
+8                   Moved (place not reported)
+9                   Unknown
+
+MIGRATE5D           Migration status, 5 years [detailed version]
+00                  N/A
+10                  Same house
+                    Different house:
+20                  Same state (migration status within state unknown)
+21                  Different house, moved within county
+22                  Different house, moved within state, between counties
+23                  Different house, moved within state, within PUMA
+24                  Different house, moved within state, between PUMAs
+25                  Different house, unknown within state
+30                  Different state (general)
+31                  Moved between contiguous states
+32                  Moved between non-contiguous states
+33                  Unknown between states
+40                  Abroad five years ago
+80                  Moved, but place was not reported
+90                  Unknown
 
 VERSIONHIST         Release version for historical full counts
 01                  Public release version 1

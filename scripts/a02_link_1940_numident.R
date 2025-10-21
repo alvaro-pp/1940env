@@ -3,7 +3,7 @@
 # Author: Thelonious Goerz
 
 # %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+rm(list = ls())
 # Set up working directory 
 setwd("./untracked_data/raw")
 # %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -14,11 +14,10 @@ library(magrittr)
 library(tidyverse)
 library(ipumsr)
 library(data.table)
-
 # Load Data 
 # %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-ddi <- read_ipums_ddi("usa_00017.xml")
+ddi <- read_ipums_ddi("usa_00020.xml")
 census <- read_ipums_micro(ddi)
 
 numident = fread("censoc_numident_v3.csv")
